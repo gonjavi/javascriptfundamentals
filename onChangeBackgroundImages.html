@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Change</title>
+
+    <script>
+      function handleOnChange(x) {
+       document.body.style.backgroundImage = "url('"+x+"')";
+      }
+    </script>
+  </head>
+  <body>
+    <select onchange="handleOnChange(this.value)">
+      <option value="">Select an image</option>
+      <option value="images/blackCoffee.jpg">Black Coffee</option>
+      <option value="images/cupOfCoffe.jpg">Cup of Coffee</option>
+      <option value="images/laura.jpg">Laura</option>
+    </select>
+  </body>
+</html>
