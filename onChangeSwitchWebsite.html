@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Change</title>
+
+    <script>
+      function handleOnChange(x) {
+        window.location = x;
+      }
+    </script>
+  </head>
+  <body>
+    <select onchange="handleOnChange(this.value)">
+      <option value="">Select a website</option>
+      <option value="http://www.google.com">Google</option>
+      <option value="http://yahoo.com">Yahoo</option>
+    </select>
+  </body>
+</html>
