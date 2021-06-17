@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Date</title>
+    <script>
+      function displayDate() {
+        var a = new Date();
+        var x = a.toLocaleTimeString();
+        var y = a.toLocaleDateString();
+        var z = a.toLocaleString();
+
+        document.getElementById("dateinfo").innerHTML = a;
+        document.getElementById("dateinfo1").innerHTML = x;
+        document.getElementById("dateinfo2").innerHTML = y;
+        document.getElementById("dateinfo3").innerHTML = z;
+      }
+    </script>
+  </head>
+  <body onload="displayDate()">
+    Current Date:<br/>
+    <p id="dateinfo"></p>
+    <p id="dateinfo1"></p>
+    <p id="dateinfo2"></p>
+    <p id="dateinfo3"></p>
+ 
+  </body>
+</html>
